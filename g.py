@@ -14,7 +14,8 @@ END = '\033[0m'
 
 if len(sys.argv) < 2:
     os.system("clear || cls")
-    sys.stdout.write(RED + """                                                                                                                                            
+    sys.stdout.write(RED + """  
+                                                                                                                                          
  ,-.       _,---._ __  / \
  /  )    .-'       `./ /   \
 (  (   ,'            `/    /|
@@ -25,7 +26,8 @@ if len(sys.argv) < 2:
   |  ,-.    ,-'         |  /
   |  | (   |       meow | /
   )  |  \  `.___________|/
-  `--'   `--'                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  `--'   `--'   
+                                                                                                                                                                                                                                                                                                                                                                                                                                       
 """  + END+BLUE+'Bypassed.'.format(RED, END).center(69) +
     '\n' + '\tCreated:{}Israfil Arnaout'.format(YELLOW, RED, YELLOW, BLUE).center(76) +
     '\n' + '\tVersion: {}2.0{}\n'.format(YELLOW, END).center(80) + '\n')
@@ -58,16 +60,16 @@ try:
         server.sendmail(email,vemail,message)
         #server.sendmail(email,vemail,BODY)
         if i == 1:
-            print (LightCyan+'[✓] '+YELLOW+' %dst Email has been sent successfully ' %(i))
+            print (LightCyan+'[✓] '+RED+' %dst Email has been sent successfully ' %(i))
         elif i == 2:
-            print (LightCyan+'[✓] '+YELLOW+' %dnd Email has been sent successfully ' %(i))
+            print (LightCyan+'[✓] '+RED+' %dnd Email has been sent successfully ' %(i))
         elif i == 3:
-            print (LightCyan+'[✓] '+YELLOW+' %drd Email has been sent successfully ' %(i))
+            print (LightCyan+'[✓] '+RED+' %drd Email has been sent successfully ' %(i))
         else:
-            print (LightCyan+'[✓] '+YELLOW+' %dth Email has been sent successfully ' %(i))
+            print (LightCyan+'[✓] '+RED+' %dth Email has been sent successfully ' %(i))
         sys.stdout.flush()
     server.quit()
-    print(LightCyan+'[✓] '+YELLOW+'All done'+END)
+    print(LightCyan+'[✓] '+GREEN+'All done'+END)
 
 except KeyboardInterrupt:
     print(" ")
