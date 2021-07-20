@@ -28,8 +28,8 @@ if len(sys.argv) < 2:
   )  |  \  `.___________|/
   `--'   `--'   
                                                                                                                                                                                                                                                                                                                                                                                                                                        
-"""  + END+BLUE+'Bypassed.'.format(RED, END).center(69) +
-    '\n' + '\tCreated:{}Israfil Arnaout'.format(YELLOW, RED, YELLOW, BLUE).center(76) +
+"""  + END+BLUE+' Bypassed. '.format(RED, END).center(69) +
+    '\n' + '\tCreated :{} Israfil Arnaout'.format(YELLOW, RED, YELLOW, BLUE).center(76) +
     '\n' + '\tVersion: {}2.0{}\n'.format(YELLOW, END).center(80) + '\n')
 else:
     sys.exit('Usage: python G-Bomber.py')
